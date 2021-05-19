@@ -14,5 +14,6 @@ function inputFieldsStyling() {
             `;
         })
     })
+    console.log('kurwa')
 }
 inputFieldsStyling();
