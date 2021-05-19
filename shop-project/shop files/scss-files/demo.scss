@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import "../scss-files/varriables.scss";
+@import "../scss-files/medias.scss";
+
+/* Header section */
+.header-items {
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0;
+    border-bottom: 1px solid $sectionBorderColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-phone-only {
+        justify-content: space-between;
+    }
+}
+.burger-menu i{
+    display: none;
+    @include for-phone-only{
+        display: block;
+        &:hover .ul-items li{
+            display: block;
+            position: absolute;
+        }
+    }
+}
+.header-items__logo {
+    p {
+        background-color: #222222;
+        color: #f0f0f0;
+        padding: 10px;
+        cursor: pointer;
+    }
+    @include for-phone-only {
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+.header-items__ul {
+    display: flex;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            padding: 0 30px;
+            color: $headerAndFooterUlColor;
+            transition: all 1s ease-out;
+            &:hover {
+                background-color: green;
+                transform: skew(-45deg) translate(20px);
+            }
+        }
+    }
+    @include for-phone-only {
+        ul {
+            display: none;
+        }
+    }
+}
+.new-class{
+    width: 400px;
+    height: 400px;
+}
+input{
+    cursor: text;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+

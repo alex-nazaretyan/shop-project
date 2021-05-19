@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/03-generic/reset.css">
+    <link rel="stylesheet" href="scss-files/cart-shop.css">
+    <title>Cart Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="header-items">
+                <div class="header-items__ul">
+                    <div class="header-items__logo">
+                        <a href="index.html">
+                            <p>SH</p>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="category-woman.html">Woman</a></li>
+                        <li><a href="category-man.html">Man</a></li>
+                        <li><a href="category-kids.html">Kids</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header-interface">
+                    <form action="">
+                        <i class="fas fa-user-ninja"></i><input type="button" value="Log in"
+                            name="header-interface__log-in" class="log-in">
+                        <a href="cart-shop.html"><i class="fas fa-shopping-bag"></i><input type="button" value="Basket"
+                                name="basket" class="header-interface__basket"> ( 0 )</a>
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="headline-wrapper">
+            <h1>YOUR SHOPPING BAG</h1>
+            <p>Items reserved for limited time only</p>
+        </section>
+        <section class="product-description">
+            <article class="product-wrapper">
+                <p>PRODUCT</p>
+                <p>DESCRIPTION</p>
+                <p>COLOR</p>
+                <p>SIZE</p>
+                <p>QTY</p>
+                <p>AMOUNT</p>
+                <p>DELETE</p>
+            </article>
+            <article class="first-line-product-content">
+                <div class="first-line-product-img"></div>
+                <div class="first-line-product-img-info">
+                    <p>FLORAL PLIMSOLL</p>
+                    <p class="first-line-reff-number">Ref. 2514/302</p>
+                </div>
+                <p class="first-line-color">One Color</p>
+                <p class="first-line-size">39</p>
+                <div class="first-line-plus-minus-option">
+                    <input type="text" name="quantity" value="1"class="quantity-number">
+                    <div class="first-line-plus-minus-buttons">
+                        <i class="first-line-plus fas fa-plus-square"></i>
+                        <i class="first-line-minus fas fa-minus-square"></i>
+                    </div>
+                </div>
+                <p class="first-line-amount">€99,95</p>
+                <i class="first-line delete-button fas fa-times"></i>
+            </article>
+            <article class="second-line-product-content">
+                <div class="second-line-product-img"></div>
+                <div class="second-line-product-img-info">
+                    <p>COATED 5 POCKET TROUSERS</p>
+                    <p class="second-line-reff-number">Ref. 8246/044</p>
+                </div>
+                <p class="second-line-color">One Color</p>
+                <p class="second-line-size">5</p>
+                <div class="second-line-plus-minus-option">
+                    <p class="second-line-quantity">1</p>
+                    <div class="second-line-plus-minus-buttons">
+                        <i class="second-line fas fa-plus-square"></i>
+                        <i class="second-line fas fa-minus-square"></i>
+                    </div>
+                </div>
+                <p class="second-line-amount">€169,00</p>
+                <i class="second-line delete-button fas fa-times"></i>
+            </article>
+            <article class="third-line-product-content">
+                <div class="third-line-product-img"></div>
+                <div class="third-line-product-img-info">
+                    <p>OVERSIZED STUDIO BLOUSE</p>
+                    <p class="third-line-reff-number">Ref. 2401/657</p>
+                </div>
+                <p class="third-line-color">Black</p>
+                <p class="third-line-size">S</p>
+                <div class="third-line-plus-minus-option">
+                    <p class="third-line-quantity">2</p>
+                    <div class="third-line-plus-minus-buttons">
+                        <i class="third-line fas fa-plus-square"></i>
+                        <i class="third-line fas fa-minus-square"></i>
+                    </div>
+                </div>
+                <p class="third-line-amount">€99,95</p>
+                <i class="third-line delete-button fas fa-times"></i>
+            </article>
+            <article class="product-wrapper-subtotal">
+                <div class="product-content-subtotal">
+                    <p>Subtotal:</p>
+                    <p>€0</p>
+                </div>
+            </article>
+            <article class="curve-line">
+                <img src="images/main-page-images/curve-line-pic.png" alt="">
+            </article>
+        </section>
+        <section class="shipping-address">
+            <article class="shipping-address__head-text">
+                <h1>SHIPPING ADDRESS</h1>
+                <p>All fields are required</p>
+            </article>
+            <form name="deliveryForm" class="delivery-form">
+                <article class="delivery-method">
+                    <label for="deliveryMethod">SELECT DELIVERY METHOD</label>
+                    <select name="deliveryMethod" class="delivery-method-select">
+                        <option>DHL INTERNATIONAL - € 15,00
+                        </option>
+                    </select>
+                </article>
+                <section class="first-and-last-name">
+                    <article class="first-name-content">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" class="first-name">
+                    </article>
+                    <article class="last-name-content">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" class="last-name">
+                    </article>
+                </section>
+                <article class="address-first-line">
+                    <label for="addressLineOne">ADDRESS (line 1)</label>
+                    <input type="text" name="addressLineOne" class="address-line-one">
+                </article>
+                <article class="address-second-line">
+                    <label for="addressLineTwo">ADDRESS (line 2)</label>
+                    <input type="text" name="addressLineTwo" class="address-line-two">
+                </article>
+                <section class="city-and-postal-code">
+                    <article class="city-wrapper">
+                        <label for="city">CITY</label>
+                        <input type="text" name="city" class="city-wrapper__content">
+                    </article>
+                    <article class="postal-code-wrapper">
+                        <label for="postalCode">POSTAL-CODE</label>
+                        <input type="text" name="postalCode" class="postal-code-wrapper__content">
+                    </article>
+                </section>
+                <section class="phone-number-and-email">
+                    <article class="phone-number-wrapper">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" class="phone-number-wrapper__content">
+                    </article>
+                    <article class="e-mail-wrapper">
+                        <label for="email">E-MAIL</label>
+                        <input type="text" name="email" class="e-mail-wrapper__content">
+                    </article>
+                </section>
+                <article class="billing-check-content">
+                    <input type="checkbox" name="billingCheck">
+                    <label for="billingCheck">Use this adress for Billing</label>
+                </article>
+                <article class="payment-options-content">
+                    <h1>PAYMENT OPTIONS</h1>
+                    <p>All fields are required</p>
+                </article>
+                <article class="amount-fields">
+                    <p>Subtotal:<span>€0</span></p>
+                    <p>Shipping:<span>€0</span></p>
+                    <p>Total:<span>€0</span></p>
+                </article>
+                <article class="payment-methods">
+                    <form name="paymentForm">
+                        <label for="payment-method" class="payment-method-label">SELECT PAYMENT METHOD</label>
+                        <select name="paymentMethod" class="payment-method">
+                            <option value="Credit-card">Credit card</option>
+                            <option value="Debit-card">Debit card</option>
+                            <option value="Cash-on">Cash on delivery</option>
+                        </select>
+                        <button type="submit">ORDDER NOW</button>
+                    </form>
+                </article>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footer-uls">
+            <article class="collection-ul">
+                <ul>
+                    <li>COLLECTION(0)</li>
+                    <li><span>Woman(0)</span></li>
+                    <li>Men(0)</li>
+                    <li>Kids(0)</li>
+                    <li>Coming Soon (0)</li>
+                </ul>
+            </article>
+            <article class="site-ul">
+                <ul>
+                    <li>SITE</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Copyright Policy</li>
+                    <li>Press Kit</li>
+                    <li>Support</li>
+                </ul>
+            </article>
+            <article class="shop-ul">
+                <ul>
+                    <li>SHOP</li>
+                    <li>About us</li>
+                    <li>Shipping metods</li>
+                    <li>Career</li>
+                    <li>Contact</li>
+                </ul>
+            </article>
+            <article class="social-content">
+                <p>SOCIAL</p>
+                <p>Shoper is made with love in Warsaw</p>
+                <p>2014 &copy; All rights reserved. El Passion</p>
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

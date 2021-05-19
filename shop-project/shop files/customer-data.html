@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/03-generic/reset.css">
+    <link rel="stylesheet" href="scss-files/customer-data.css">
+    <title>Customer Data</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section class="header-items">
+                <div class="header-items__ul">
+                    <div class="header-items__logo">
+                        <a href="index.html"><p>SH</p></a>
+                    </div>
+                    <ul>
+                        <li><a href="category-woman.html">Woman</a></li>
+                        <li><a href="category-man.html">Man</a></li>
+                        <li><a href="category-kids.html">Kids</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header-interface">
+                    <form action="">
+                        <i class="fas fa-user-ninja"></i><input type="button" value="Log in"
+                            name="header-interface__log-in" class="log-in">
+                        <a href="cart-shop.html"><i class="fas fa-shopping-bag"></i><input type="button" value="Basket" name="basket"
+                            class="header-interface__basket"> ( 0 )</a>
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="categories-all-steps">
+            <p>HOME</p>
+            <p>/</p>
+            <p>ACCOUNT</p>
+            <p>/</p>
+            <p>EDIT YOUR ACCOUNT</p>
+        </section>
+        <section class="headline-wrapper">
+            <h1>EDIT YOUR ACCOUNT</h1>
+        </section>
+        <section class="customer-data">
+            <form action="" class="account-editing-form" name="accountEditingForm">
+                <section class="first-and-last-name">
+                    <article class="first-name-content">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" class="first-name">
+                    </article>
+                    <article class="last-name-content">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="firstName" class="last-name">
+                    </article>
+                </section>
+                <section class="company-name-and-nip">
+                    <div class="company-name">
+                        <label for="company-name">COMPANY NAME (optional)</label>
+                        <input type="text" name="company-name" id="">
+                    </div>
+                    <div class="nip">
+                        <label for="nip">NIP (optional)</label>
+                        <input type="text" name="nip">
+                    </div>
+                </section>
+                <section class="address">
+                    <label for="address">ADDRESS (line 1)</label>
+                    <input type="text" name="addreess" class="address">
+                </section>
+                <section class="city-and-postal-code">
+                    <article class="city-wrapper">
+                        <label for="city">CITY</label>
+                        <input type="text" name="city" class="city-wrapper__content">
+                    </article>
+                    <article class="postal-code-wrapper">
+                        <label for="postal-code">ZIP CODE</label>
+                        <input type="text" name="postal-code" class="postal-code-wrapper__content">
+                    </article>
+                </section>
+                <section class="country">
+                    <label for="country">COUNTRY</label>
+                    <select name="country">
+                        <option value="bg">Bulgaria</option>
+                        <option value="en">England</option>
+                        <option value="pl">Poland</option>
+                        <option value="gr">Germany</option>
+                    </select>
+                </section>
+                <section class="phone-number-and-email">
+                    <article class="phone-number-wrapper">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" class="phone-number-wrapper__content">
+                    </article>
+                    <article class="e-mail-wrapper">
+                        <label for="e-mail">E-MAIL</label>
+                        <input type="text" name="e-mail" class="e-mail-wrapper__content">
+                    </article>
+                </section>
+            </form>
+            <section class="checkbox-billing">
+                <div>
+                    <input type="checkbox" name="billing" id="">
+                    <label for="billing">Use this address for Billing</label>
+                </div>
+                <input type="submit" value="Save" class="btn-save">
+            </section>
+
+        </section>
+    </main>
+    <footer>
+        <section class="footer-uls">
+            <article class="collection-ul">
+                <ul>
+                    <li>COLLECTION(0)</li>
+                    <li><span>Woman(0)</span></li>
+                    <li>Men(0)</li>
+                    <li>Kids(0)</li>
+                    <li>Coming Soon (0)</li>
+                </ul>
+            </article>
+            <article class="site-ul">
+                <ul>
+                    <li>SITE</li>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Copyright Policy</li>
+                    <li>Press Kit</li>
+                    <li>Support</li>
+                </ul>
+            </article>
+            <article class="shop-ul">
+                <ul>
+                    <li>SHOP</li>
+                    <li>About us</li>
+                    <li>Shipping metods</li>
+                    <li>Career</li>
+                    <li>Contact</li>
+                </ul>
+            </article>
+            <article class="social-content">
+                <p>SOCIAL</p>
+                <p>Shoper is made with love in Warsaw</p>
+                <p>2014 &copy; All rights reserved. El Passion</p>
+                <ul>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    <script src="js-files/customer-data.js"></script>
+</body>
+
+</html>
