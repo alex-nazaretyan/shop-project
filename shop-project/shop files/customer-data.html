@@ -54,41 +54,41 @@
             <form action="" class="account-editing-form" name="accountEditingForm">
                 <section class="first-and-last-name">
                     <article class="first-name-content">
-                        <label for="firstName">FIRST NAME</label>
+                        <label for="firstName" class="first-name-label">FIRST NAME <span class="required-f-name">*</span></label>
                         <input type="text" name="firstName" class="first-name">
                     </article>
                     <article class="last-name-content">
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" name="firstName" class="last-name">
+                        <label for="lastName">LAST NAME <span class="required-l-name">*</span></label>
+                        <input type="text" name="lastName" class="last-name">
                     </article>
                 </section>
                 <section class="company-name-and-nip">
                     <div class="company-name">
-                        <label for="company-name">COMPANY NAME (optional)</label>
-                        <input type="text" name="company-name" id="">
+                        <label for="company-name">COMPANY NAME (optional) <span class="required-company-name">*</span></label>
+                        <input type="text" name="companyName" class="company-name-input">
                     </div>
                     <div class="nip">
-                        <label for="nip">NIP (optional)</label>
-                        <input type="text" name="nip">
+                        <label for="nip">NIP (optional) <span class="required-nip">*</span></label>
+                        <input type="text" name="nip" class="nip-input">
                     </div>
                 </section>
-                <section class="address">
-                    <label for="address">ADDRESS (line 1)</label>
-                    <input type="text" name="addreess" class="address">
+                <section class="address-content">
+                    <label for="address">ADDRESS (line 1) <span class="required-address">*</span></label>
+                    <input type="text" name="address" class="address">
                 </section>
                 <section class="city-and-postal-code">
                     <article class="city-wrapper">
-                        <label for="city">CITY</label>
+                        <label for="city">CITY <span class="required-city">*</span></label>
                         <input type="text" name="city" class="city-wrapper__content">
                     </article>
                     <article class="postal-code-wrapper">
-                        <label for="postal-code">ZIP CODE</label>
-                        <input type="text" name="postal-code" class="postal-code-wrapper__content">
+                        <label for="postal-code">ZIP CODE <span class="required-zip-code">*</span></label>
+                        <input type="text" name="postalCode" class="postal-code-wrapper__content">
                     </article>
                 </section>
                 <section class="country">
-                    <label for="country">COUNTRY</label>
-                    <select name="country">
+                    <label for="country">COUNTRY <span class="required-country">*</span></label>
+                    <select name="country" class="country-input">
                         <option value="bg">Bulgaria</option>
                         <option value="en">England</option>
                         <option value="pl">Poland</option>
@@ -97,21 +97,21 @@
                 </section>
                 <section class="phone-number-and-email">
                     <article class="phone-number-wrapper">
-                        <label for="phone">PHONE NUMBER</label>
+                        <label for="phone">PHONE NUMBER <span class="required-phone-number">*</span></label>
                         <input type="text" name="phone" class="phone-number-wrapper__content">
                     </article>
                     <article class="e-mail-wrapper">
-                        <label for="e-mail">E-MAIL</label>
-                        <input type="text" name="e-mail" class="e-mail-wrapper__content">
+                        <label for="e-mail">E-MAIL <span class="required-email">*</span></label>
+                        <input type="text" name="email" class="e-mail-wrapper__content">
                     </article>
                 </section>
             </form>
             <section class="checkbox-billing">
                 <div>
-                    <input type="checkbox" name="billing" id="">
+                    <input type="checkbox" name="billing">
                     <label for="billing">Use this address for Billing</label>
                 </div>
-                <input type="submit" value="Save" class="btn-save">
+                <input type="submit" value="submit" class="btn-save">
             </section>
 
         </section>
@@ -153,12 +153,11 @@
                 <ul>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i clrrrass="fab fa-instagram"></i></li>
                 </ul>
             </article>
         </section>
     </footer>
     <script src="js-files/customer-data.js"></script>
 </body>
-
 </html>
