@@ -110,6 +110,14 @@
   justify-content: space-between;
 }
 
+.first-and-last-name .first-name-pop-up-message {
+  display: none;
+}
+
+.first-and-last-name .last-name-pop-up-message {
+  display: none;
+}
+
 .first-name,
 .last-name {
   display: block;
@@ -134,6 +142,10 @@
   display: block;
 }
 
+.company-name .company-name-pop-up-message {
+  display: none;
+}
+
 .company-name input {
   width: 385px;
   height: 40px;
@@ -154,6 +166,14 @@
   height: 40px;
 }
 
+.nip .nip-name-pop-up-message {
+  display: none;
+}
+
+.address-content .address-name-pop-up-message {
+  display: none;
+}
+
 .address {
   display: block;
   width: 575px;
@@ -172,6 +192,14 @@
   display: flex;
   justify-content: space-between;
   cursor: text;
+}
+
+.city-and-postal-code .city-name-pop-up-message {
+  display: none;
+}
+
+.city-and-postal-code .zip-code-pop-up-message {
+  display: none;
 }
 
 .city-wrapper__content,
@@ -212,9 +240,21 @@
   }
 }
 
+.country .country-name-pop-up-message {
+  display: none;
+}
+
 .phone-number-and-email {
   display: flex;
   justify-content: space-between;
+}
+
+.phone-number-and-email .phone-number-pop-up-message {
+  display: none;
+}
+
+.phone-number-and-email .email-name-pop-up-message {
+  display: none;
 }
 
 .phone-number-wrapper__content,

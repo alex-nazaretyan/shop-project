@@ -54,39 +54,63 @@
             <form action="" class="account-editing-form" name="accountEditingForm">
                 <section class="first-and-last-name">
                     <article class="first-name-content">
+                        <div class="first-name-pop-up-message">
+                            <p>First name field is required !</p>
+                        </div>
                         <label for="firstName" class="first-name-label">FIRST NAME <span class="required-f-name">*</span></label>
                         <input type="text" name="firstName" class="first-name">
                     </article>
                     <article class="last-name-content">
+                        <div class="last-name-pop-up-message">
+                            <p>Last name field is required !</p>
+                        </div>
                         <label for="lastName">LAST NAME <span class="required-l-name">*</span></label>
                         <input type="text" name="lastName" class="last-name">
                     </article>
                 </section>
                 <section class="company-name-and-nip">
                     <div class="company-name">
+                        <div class="company-name-pop-up-message">
+                            <p>Company name field is required !</p>
+                        </div>
                         <label for="company-name">COMPANY NAME (optional) <span class="required-company-name">*</span></label>
                         <input type="text" name="companyName" class="company-name-input">
                     </div>
                     <div class="nip">
+                        <div class="nip-name-pop-up-message">
+                            <p>Nip field is required !</p>
+                        </div>
                         <label for="nip">NIP (optional) <span class="required-nip">*</span></label>
                         <input type="text" name="nip" class="nip-input">
                     </div>
                 </section>
                 <section class="address-content">
+                    <div class="address-name-pop-up-message">
+                        <p>Address name field is required !</p>
+                    </div>
                     <label for="address">ADDRESS (line 1) <span class="required-address">*</span></label>
                     <input type="text" name="address" class="address">
                 </section>
                 <section class="city-and-postal-code">
                     <article class="city-wrapper">
+                        <div class="city-name-pop-up-message">
+                            <p>City name field is required !</p>
+                        </div>
                         <label for="city">CITY <span class="required-city">*</span></label>
                         <input type="text" name="city" class="city-wrapper__content">
                     </article>
                     <article class="postal-code-wrapper">
+                        <div class="zip-code-pop-up-message">
+                            <p>ZipCode field is required !</p>
+                        </div>
                         <label for="postal-code">ZIP CODE <span class="required-zip-code">*</span></label>
                         <input type="text" name="postalCode" class="postal-code-wrapper__content">
                     </article>
                 </section>
                 <section class="country">
+                    <div class="country-name-pop-up-message">
+                        <p>Country name field is required !</p>
+                    </div>
                     <label for="country">COUNTRY <span class="required-country">*</span></label>
                     <select name="country" class="country-input">
                         <option value="bg">Bulgaria</option>
@@ -97,10 +121,16 @@
                 </section>
                 <section class="phone-number-and-email">
                     <article class="phone-number-wrapper">
+                        <div class="phone-number-pop-up-message">
+                            <p>Phone number field is required !</p>
+                        </div>
                         <label for="phone">PHONE NUMBER <span class="required-phone-number">*</span></label>
                         <input type="text" name="phone" class="phone-number-wrapper__content">
                     </article>
                     <article class="e-mail-wrapper">
+                        <div class="email-name-pop-up-message">
+                            <p>Email name field is required !</p>
+                        </div>
                         <label for="e-mail">E-MAIL <span class="required-email">*</span></label>
                         <input type="text" name="email" class="e-mail-wrapper__content">
                     </article>
