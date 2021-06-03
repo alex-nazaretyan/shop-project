@@ -408,6 +408,10 @@
 form {
     display: flex;
     align-items: flex-end;
+    @include for-phone-only{
+            display: flex;
+            align-items: flex-end;
+    }
     .email {
         padding: 11px 300px 11px 25px;
         cursor: text;

@@ -444,6 +444,13 @@ form {
   align-items: flex-end;
 }
 
+@media (max-width: 599px) {
+  form {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 form .email {
   padding: 11px 300px 11px 25px;
   cursor: text;
