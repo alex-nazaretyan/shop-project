@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+@import "../scss/varriables.scss";
+@import "../scss/medias.scss";
+body {
+    background-color: #e5e5e5;
+}
+
+header {
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 35px 0;
+        @include for-phone-only{
+            padding: 14px 0;
+        }
+        h1 {
+            color: white;
+            padding: 20px;
+            border: 1px solid white;
+            font-size: 35px;
+            font-weight: lighter;
+        }
+    }
+}
+
+/* Section log-in */
+
+.log-in {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-phone-only{
+        margin-bottom: 50px;
+    }
+    label {
+        color: $paragraphColor;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        width: 385px;
+        height: 35px;
+        cursor: text;
+        margin-top: 15px;
+    }
+    button {
+        background-color: #f68236;
+        color: white;
+        border: none;
+        padding: 15px 65px;
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
+    span {
+        color: #f68236;
+        cursor: pointer;
+    }
+    p:last-of-type {
+        color: #f68236;
+        cursor: pointer;
+    }
+}
+
+.log-in__sign-in-text {
+    text-align: center;
+    font-size: 30px;
+    padding: 55px 0;
+    font-weight: bold;
+}
+
+.log-in__e-mail {
+    display: block;
+    margin-bottom: 50px;
+}
