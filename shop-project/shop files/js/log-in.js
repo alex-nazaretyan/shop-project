@@ -1,5 +1,10 @@
 function solve(){
-    const email = document.querySelector('.log-in__e-mail');
-    trim(email.value); 
+    const validUserName = 'deJav1u@abv.bg';
+    const logInForm = document.forms.logIn;
+    const submitButton = document.querySelector('.btn')
+    const userNameValue = logInForm.elements.email.value;
+    console.log(submitButton);
+    
+  
 }
 solve();

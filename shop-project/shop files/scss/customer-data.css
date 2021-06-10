@@ -110,11 +110,11 @@
   justify-content: space-between;
 }
 
-.first-and-last-name .first-name-pop-up-message {
+.first-and-last-name .pop-up-message {
   display: none;
 }
 
-.first-and-last-name .last-name-pop-up-message {
+.first-and-last-name .pop-up-message {
   display: none;
 }
 
@@ -142,7 +142,7 @@
   display: block;
 }
 
-.company-name .company-name-pop-up-message {
+.company-name .pop-up-message {
   display: none;
 }
 
@@ -166,11 +166,11 @@
   height: 40px;
 }
 
-.nip .nip-name-pop-up-message {
+.nip .pop-up-message {
   display: none;
 }
 
-.address-content .address-name-pop-up-message {
+.address-content .pop-up-message {
   display: none;
 }
 
@@ -194,11 +194,11 @@
   cursor: text;
 }
 
-.city-and-postal-code .city-name-pop-up-message {
+.city-and-postal-code .pop-up-message {
   display: none;
 }
 
-.city-and-postal-code .zip-code-pop-up-message {
+.city-and-postal-code .pop-up-message {
   display: none;
 }
 
@@ -240,7 +240,7 @@
   }
 }
 
-.country .country-name-pop-up-message {
+.country .pop-up-message {
   display: none;
 }
 
@@ -249,11 +249,11 @@
   justify-content: space-between;
 }
 
-.phone-number-and-email .phone-number-pop-up-message {
+.phone-number-and-email .pop-up-message {
   display: none;
 }
 
-.phone-number-and-email .email-name-pop-up-message {
+.phone-number-and-email .pop-up-message {
   display: none;
 }
 
