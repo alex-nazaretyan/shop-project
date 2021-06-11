@@ -76,6 +76,22 @@ header nav h1 {
   cursor: pointer;
 }
 
+.log-in .green-check {
+  display: none;
+}
+
+.log-in .green-check .email-text-correct {
+  display: inline-block;
+}
+
+.log-in .red-check {
+  display: none;
+}
+
+.log-in .red-check .email-text-incorrect {
+  display: inline-block;
+}
+
 .log-in__sign-in-text {
   text-align: center;
   font-size: 30px;

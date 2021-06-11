@@ -66,6 +66,18 @@ header {
         color: #f68236;
         cursor: pointer;
     }
+    .green-check{
+        display: none;
+        .email-text-correct{
+            display: inline-block;
+        }
+    }
+    .red-check{
+        display: none;
+        .email-text-incorrect{
+            display: inline-block;
+        }
+    }
 }
 
 .log-in__sign-in-text {
