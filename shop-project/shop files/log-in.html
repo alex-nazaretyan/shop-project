@@ -30,14 +30,20 @@
                     <i class="fas fa-times"></i>
                 </div>
                 <input type="email" name="email" class="log-in__e-mail">
-                <div>
+                <div class="password-wrapper">
                     <label for="password">PASSWORD</label>
-                    <span>forgot password</span>
+                    <div class="empty-field">
+                        <p>Please, write your password!</p>
+                    </div>
+                    <div class="password-length">
+                        <p>Your password is too short!</p>
+                    </div>
                 </div>  
                 <input type="password" name="password" class="log-in__password">
             </form>
             <button class="btn">LOG IN</button>
             <p>I don`t have an account</p>
+            <span>Forgot password</span>
         </section>
         <script src="js/log-in.js"></script>
     </main>

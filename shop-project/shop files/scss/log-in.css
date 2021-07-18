@@ -28,6 +28,7 @@ header nav h1 {
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  padding-bottom: 50px;
   background-color: #ffffff;
   box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.76);
   display: flex;
@@ -43,11 +44,6 @@ header nav h1 {
 
 .log-in label {
   color: #606060;
-}
-
-.log-in div {
-  display: flex;
-  justify-content: space-between;
 }
 
 .log-in input {
@@ -102,4 +98,12 @@ header nav h1 {
 .log-in__e-mail {
   display: block;
   margin-bottom: 50px;
+}
+
+.password-wrapper .empty-field {
+  display: none;
+}
+
+.password-wrapper .password-length {
+  display: none;
 }

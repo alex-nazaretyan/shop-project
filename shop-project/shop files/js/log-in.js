@@ -31,15 +31,47 @@ function emailValidation() {
                 display:none;
             `;
         }
-        let element =  logInForm.elements.email.value = logInForm.elements.email.value;
-        element = 'some text'
-        
-       
-        
-    })
-    
-
-
-
+    });
 }
 emailValidation();
+
+
+function passwordValidation(pass) {
+    const passwordMessage = document.querySelector('.password-wrapper');
+    const emptyFieldMessage = document.querySelector('.empty-field');
+    const passwordLengthMessage = document.querySelector('.password-length');
+    const submitButton = document.querySelector('.btn');
+    const password = document.querySelector('.log-in__password');
+    submitButton.addEventListener('click', () => {
+        if (password.value === '') {
+            passwordMessage.style.cssText = `
+                justify-content:unset;
+            `;
+            emptyFieldMessage.style.cssText = `
+            display:inline-block;
+            padding-left:10px;
+            `;
+            passwordLengthMessage.style.cssText = `
+                display:none;
+            `;
+        } else if (password.value !== '' && password.value.length <=5) {
+            passwordLengthMessage.style.cssText = `
+                display:inline-block;
+                padding-left:10px;
+            `;
+            emptyFieldMessage.style.cssText = `
+                display:none;
+            `; 
+            
+        } else if(password.value.length >6){
+            passwordLengthMessage.style.cssText = `
+                display:none;
+            `;
+            emptyFieldMessage.style.cssText = `
+                display:none;
+            `;
+        }
+    });
+
+}
+passwordValidation();
