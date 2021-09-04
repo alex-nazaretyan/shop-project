@@ -41,11 +41,11 @@ deliveryFormSubmitingJSON();
 function removingList(){
     const section = document.querySelector(".product-description");
     section.addEventListener("click", (event)=>{
-        if(event.target.tagName === 'P'){
+        if(event.target.tagName === 'I'){
             const button = event.target;
             const article = button.parentNode;
             const section = article.parentNode;
-            if(button.tagName === 'P'){
+            if(button.tagName === 'I'){
                 section.removeChild(article);
             }
         }
