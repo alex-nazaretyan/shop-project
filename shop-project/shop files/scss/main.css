@@ -41,12 +41,6 @@
 .header-items__ul ul li {
   padding: 0 30px;
   color: #303030;
-  transition: all 1s ease-out;
-}
-
-.header-items__ul ul li:hover {
-  background-color: green;
-  transform: skew(-45deg) translate(20px);
 }
 
 @media (max-width: 599px) {
@@ -437,11 +431,6 @@
   .updates-info p {
     padding-top: 30px;
   }
-}
-
-form {
-  display: flex;
-  align-items: flex-end;
 }
 
 @media (max-width: 599px) {

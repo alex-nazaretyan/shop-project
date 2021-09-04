@@ -1,13 +1,11 @@
 function quantityAddingAndDividing() {
-    const plusOption = document.querySelector('.first-line-plus');
-    const firstLineAmount = document.querySelector('.first-line-amount');
-    let value = Number(firstLineAmount.value);  
-    console.log(value);
+    const plusOption = document.querySelector('.first-line-plus'); 
     plusOption.addEventListener('click', () => {
         let valueCount = document.querySelector('.quantity-number');
         let parsedNum = Number(valueCount.value);
+        console.log(Number(firstLineAmount.value));
         parsedNum++;
-        document.querySelector('.quantity-number').value = parsedNum;      
+        document.querySelector('.quantity-number').value = parsedNum; 
     })
     const minusOption = document.querySelector('.first-line-minus');
     minusOption.addEventListener('click', () => {
@@ -23,9 +21,8 @@ function quantityAddingAndDividing() {
 quantityAddingAndDividing();
 // function multiplyPrice(){
 //     const firstLineAmount = document.querySelector('.first-line-amount');
-//     let value = Number(firstLineAmount.value);
-    
-    
+//     let value = parseNum(firstLineAmount.value+5);
+//     console.log(value);
 // }
 // multiplyPrice();
 
@@ -41,3 +38,17 @@ function deliveryFormSubmitingJSON() {
     deliveryMethodForm.addEventListener('submit', dataSubmiting);
 }
 deliveryFormSubmitingJSON();
+function removingList(){
+    const section = document.querySelector(".product-description");
+    section.addEventListener("click", (event)=>{
+        if(event.target.tagName === 'P'){
+            const button = event.target;
+            const article = button.parentNode;
+            const section = article.parentNode;
+            if(button.tagName === 'P'){
+                section.removeChild(article);
+            }
+        }
+    })
+}
+removingList();

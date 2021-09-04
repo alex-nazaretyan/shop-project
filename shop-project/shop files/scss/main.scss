@@ -37,11 +37,6 @@
         li {
             padding: 0 30px;
             color: $headerAndFooterUlColor;
-            transition: all 1s ease-out;
-            &:hover {
-                background-color: green;
-                transform: skew(-45deg) translate(20px);
-            }
         }
     }
     @include for-phone-only {
@@ -406,8 +401,6 @@
 }
 
 form {
-    display: flex;
-    align-items: flex-end;
     @include for-phone-only{
             display: flex;
             align-items: flex-end;

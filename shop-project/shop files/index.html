@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/03-generic/reset.css">
     <link rel="stylesheet" href="scss/main.css">
     <title>SH</title>
@@ -16,9 +17,9 @@
             <section class="header-items">
                 <div class="header-items__ul">
                     <div class="header-items__logo">
-                        <a href="#"><p>SH</p></a>
+                        <a href="#"><p class="logo.">SH</p></a>
                     </div>
-                    <ul>
+                    <ul class="nav-bar-ul">
                         <li><a href="category-woman.html">Woman</a></li>
                         <li><a href="category-man.html">Man</a></li>
                         <li><a href="category-kids.html">Kids</a></li>
@@ -47,13 +48,13 @@
             <button>CHEK NEW ARRIVALS</button>
         </section>
         <section class="main-page-gallery">
-            <section class="gallery-first-pic">
+            <section class="gallery-first-pic gallery-pic"  data-aos="zoom-in">
                 <article class="gallery-first-pic-content">
                     <p>HEATHER GREY BASICS</p>
                     <P>NEW ARRIVAL</P>
                 </article>
             </section>
-            <section class="gallery-second-pic">
+            <section class="gallery-second-pic gallery-pic"  data-aos="zoom-in">
                 <article class="gallery-second-pic-content">
                     <div class="gallery-twitter-icon">
                         <img src="images/main-page-images/horizntal-line.png" alt="">
@@ -68,22 +69,22 @@
                     </div>
                 </article>
             </section>
-            <section class="gallery-third-pic">
+            <section class="gallery-third-pic gallery-pic"  data-aos="zoom-in">
             </section>
-            <section class="gallery-fourth-pic">
+            <section class="gallery-fourth-pic gallery-pic" data-aos="zoom-in">
                 <article class="gallery-fourth-pic-content">
                     <i class="fas fa-long-arrow-alt-left"></i>
                     <p>ELEGANT SHOES</p>
                     <p>BRAIDED LEATHER</p>
                 </article>
             </section>
-            <section class="gallery-fifth-pic">
+            <section class="gallery-fifth-pic gallery-pic"data-aos="zoom-in">
                 <article class="gallery-fifth-pic-content">
                     <p>CHUCK TAYLORS</p>
                     <p>$125.00</p>
                 </article>
             </section>
-            <section class="gallery-sixth-pic">
+            <section class="gallery-sixth-pic gallery-pic"data-aos="zoom-in">
                 <article class="gallery-second-pic-content">
                     <div class="gallery-second-twitter-icon">
                         <img src="images/main-page-images/horizntal-line.png" alt="">
@@ -96,22 +97,22 @@
                     </div>
                 </article>
             </section>
-            <section class="gallery-seventh-pic">
+            <section class="gallery-seventh-pic gallery-pic"data-aos="zoom-in">
                 <article class="gallery-seventh-pic-content">
                     <p>JEANS FOR ADVENTURE</p>
                     <p>NEW ARRIVAL</p>
                 </article>
             </section>
-            <section class="gallery-eighth-pic">
+            <section class="gallery-eighth-pic gallery-pic"data-aos="zoom-in">
             </section>
-            <section class="gallery-nineth-pic">
+            <section class="gallery-nineth-pic gallery-pic"data-aos="zoom-in">
                 <article class="gallery-nineth-pic-content">
                     <i class="fas fa-long-arrow-alt-left"></i>
                     <p>JAXON HAT</p>
                     <p>BEANIE HAT</p>
                 </article>
             </section>
-            <section class="gallery-tenth-pic">
+            <section class="gallery-tenth-pic gallery-pic"data-aos="zoom-in">
                 <article class="gallery-tenth-pic-content">
                     <p>BASIC BLAZERS</p>
                     <p>FROM $199.00</p>
@@ -173,6 +174,9 @@
             </article>
         </section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animations/index-animations.js"></script>
 </body>
 
 </html>
